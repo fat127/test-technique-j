@@ -1,0 +1,144 @@
+.login-container {
+    display: flex;
+    width: 80%;
+    max-width: 1400px;
+    height: 100vh; /* Ensure it fills the viewport height */
+    background: white;
+    border-radius: 0;
+    box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+    overflow: hidden;
+    margin: 0 auto; /* Center the container */
+}
+
+.login-wrapper {
+    display: flex;
+    width: 100%;
+    height: 100%; /* Match the container height */
+}
+
+.login-section {
+    flex: 1;
+    background: linear-gradient(135deg, #6a1b9a 0%, #8e24aa 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: hidden; /* Prevent scroll within the section */
+}
+
+.login-card {
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    background: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-card-title {
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #4CAF50;
+}
+
+.login-input-group {
+    margin-bottom: 20px;
+}
+
+.login-input {
+    width: 100%;
+    padding: 5px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.login-input:focus {
+    border-color: #4CAF50;
+}
+
+.login-error {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #e74c3c;
+}
+
+.login-general-error {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+    background-color: #45a049;
+}
+
+.instructions-section {
+    flex: 1;
+    padding: 40px;
+    background: #fafafa;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden; /* Prevent scroll within the section */
+}
+
+.instructions-title {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #4CAF50;
+}
+
+.instructions-text {
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.instructions-list {
+    list-style: square;
+    padding-left: 20px;
+    text-align: left;
+    font-size: 0.9rem;
+}
+
+.instructions-image {
+    max-width: 80%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        height: auto; /* Allow height to adjust for smaller screens */
+    }
+
+    .login-section,
+    .instructions-section {
+        flex: none;
+        width: 100%;
+    }
+
+    .instructions-section {
+        padding: 20px;
+    }
+}
